@@ -313,65 +313,65 @@
 		</Scripts>
 	</Frame>
 	<!-- Minimap button to access the TimeManagerButton -->
-	<Button name="TimeManagerClockButton" parent="Minimap" hidden="true" frameStrata="MEDIUM">
-		<Size x="51" y="24"/>
-		<Anchors>
-			<Anchor point="CENTER">
-				<Offset x="0" y="-68"/>
-			</Anchor>
-		</Anchors>
-		<Layers>
-			<Layer level="BORDER">
-				<Texture file="Interface\AddOns\TimeManager\Textures\ClockBackground">
-					<Size x="51" y="24"/>
-					<Anchors>
-						<Anchor point="CENTER">
-							<Offset x="0" y="0"/>
-						</Anchor>
-					</Anchors>
-					<TexCoords left="0.015625" right="0.8125" top="0.015625" bottom="0.390625"/>
-				</Texture>
-			</Layer>
-			<Layer level="ARTWORK">
-				<FontString name="TimeManagerClockTicker" inherits="GameFontHighlightSmall">
-					<Anchors>
-						<Anchor point="CENTER">
-							<Offset x="0" y="0"/>
-						</Anchor>
-					</Anchors>
-				</FontString>
-				<Texture name="TimeManagerAlarmFiredTexture" file="Interface\AddOns\TimeManager\Textures\ClockBackground" alphaMode="ADD" hidden="true">
-					<Size x="51" y="24"/>
-					<Anchors>
-						<Anchor point="CENTER">
-							<Offset x="0" y="0"/>
-						</Anchor>
-					</Anchors>
-					<TexCoords left="0.015625" right="0.8125" top="0.51625" bottom="0.890625"/>
-				</Texture>
-			</Layer>
-		</Layers>
-		<Scripts>
-			<OnLoad>
-				TimeManagerClockButton_OnLoad()
-			</OnLoad>
-			<OnEvent>
-				TimeManagerClockButton_OnEvent()
-			</OnEvent>
-			<OnEnter>
-				TimeManagerClockButton_OnEnter()
-			</OnEnter>
-			<OnLeave>
-				TimeManagerClockButton_OnLeave()
-			</OnLeave>
-			<OnUpdate>
-				TimeManagerClockButton_OnUpdate()
-			</OnUpdate>
-			<OnMouseUp>
-				TimeManagerClockButton_OnClick()
-			</OnMouseUp>
-		</Scripts>
-	</Button>
+	<!-- <Button name="TimeManagerClockButton" parent="Minimap" hidden="true" frameStrata="MEDIUM"> -->
+	<!-- 	<Size x="51" y="24"/> -->
+	<!-- 	<Anchors> -->
+	<!-- 		<Anchor point="CENTER"> -->
+	<!-- 			<Offset x="0" y="-68"/> -->
+	<!-- 		</Anchor> -->
+	<!-- 	</Anchors> -->
+	<!-- 	<Layers> -->
+	<!-- 		<Layer level="BORDER"> -->
+	<!-- 			<Texture file="Interface\AddOns\TimeManager\Textures\ClockBackground"> -->
+	<!-- 				<Size x="51" y="24"/> -->
+	<!-- 				<Anchors> -->
+	<!-- 					<Anchor point="CENTER"> -->
+	<!-- 						<Offset x="0" y="0"/> -->
+	<!-- 					</Anchor> -->
+	<!-- 				</Anchors> -->
+	<!-- 				<TexCoords left="0.015625" right="0.8125" top="0.015625" bottom="0.390625"/> -->
+	<!-- 			</Texture> -->
+	<!-- 		</Layer> -->
+	<!-- 		<Layer level="ARTWORK"> -->
+	<!-- 			<FontString name="TimeManagerClockTicker" inherits="GameFontHighlightSmall"> -->
+	<!-- 				<Anchors> -->
+	<!-- 					<Anchor point="CENTER"> -->
+	<!-- 						<Offset x="0" y="0"/> -->
+	<!-- 					</Anchor> -->
+	<!-- 				</Anchors> -->
+	<!-- 			</FontString> -->
+	<!-- 			<Texture name="TimeManagerAlarmFiredTexture" file="Interface\AddOns\TimeManager\Textures\ClockBackground" alphaMode="ADD" hidden="true"> -->
+	<!-- 				<Size x="51" y="24"/> -->
+	<!-- 				<Anchors> -->
+	<!-- 					<Anchor point="CENTER"> -->
+	<!-- 						<Offset x="0" y="0"/> -->
+	<!-- 					</Anchor> -->
+	<!-- 				</Anchors> -->
+	<!-- 				<TexCoords left="0.015625" right="0.8125" top="0.51625" bottom="0.890625"/> -->
+	<!-- 			</Texture> -->
+	<!-- 		</Layer> -->
+	<!-- 	</Layers> -->
+	<!-- 	<Scripts> -->
+	<!-- 		<OnLoad> -->
+	<!-- 			TimeManagerClockButton_OnLoad() -->
+	<!-- 		</OnLoad> -->
+	<!-- 		<OnEvent> -->
+	<!-- 			TimeManagerClockButton_OnEvent() -->
+	<!-- 		</OnEvent> -->
+	<!-- 		<OnEnter> -->
+	<!-- 			TimeManagerClockButton_OnEnter() -->
+	<!-- 		</OnEnter> -->
+	<!-- 		<OnLeave> -->
+	<!-- 			TimeManagerClockButton_OnLeave() -->
+	<!-- 		</OnLeave> -->
+	<!-- 		<OnUpdate> -->
+	<!-- 			TimeManagerClockButton_OnUpdate() -->
+	<!-- 		</OnUpdate> -->
+	<!-- 		<OnMouseUp> -->
+	<!-- 			TimeManagerClockButton_OnClick() -->
+	<!-- 		</OnMouseUp> -->
+	<!-- 	</Scripts> -->
+	<!-- </Button> -->
 	<!-- Stopwatch -->
 	<Frame name="StopwatchFrame" toplevel="true" parent="UIParent" movable="true" enableMouse="true" hidden="true" clampedToScreen="true" frameStrata="DIALOG">
 		<Size x="130" y="48"/>
